@@ -1,8 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sacramento&family=Sofia&family=Tangerine:wght@400;700&family=Wellfleet&display=swap');
+
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .container
@@ -11,6 +20,8 @@
     min-height: 900px;
     /* border: 2px solid #000; */
     background-color: #000;
+    display: flex;
+    flex-direction: column;
 }
 
 #section1
@@ -26,6 +37,7 @@
     height: 50px;
     /* border: 2px solid white; */
     display: flex;
+    flex-direction: row;
 }
 
 .main-logo-menu .logo
@@ -33,6 +45,7 @@
     width: 40%;
     height: 100%;
     /* border: 2px solid white; */
+    display: flex;
 }
 
 .logo h1{
@@ -40,6 +53,8 @@
     padding-left: 170px;
     color: white;
     position: fixed;
+    font-family: "Wellfleet", monospace;
+    font-weight: 250;
 }
 
 .main-logo-menu .menu
@@ -48,6 +63,7 @@
     height: 100%;
     /* border: 2px solid #fff; */
     margin-left: 60px;
+    display: flex;
 }
 
 .menu a:hover{
@@ -155,6 +171,8 @@ nav ul li a{
     height: 100vh;
     /* border: 2px solid white; */
     color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 #section2 .box2
@@ -164,7 +182,8 @@ nav ul li a{
     /* border: 2px solid #fff; */
     margin-top: 170px;
     margin-left: 150px;
-    float: left;
+    /* float: left; */
+    display: flex;
 }
 
 .box2 img
@@ -185,7 +204,9 @@ nav ul li a{
     width: 60%;
     height: 100%;
     /* border: 2px solid #fff; */
-    float: right;
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
 }
 
 .box3 h1
@@ -230,6 +251,7 @@ nav ul li a{
     /* text-decoration: none;
     font-size: 1.2em;
     color: #000; */
+    display: flex;
 }
 
 .sbox3 a
@@ -258,6 +280,8 @@ nav ul li a{
     height: 100vh;
     /* border: 2px solid #fff; */
     color: white;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 #section3 p
@@ -270,6 +294,8 @@ nav ul li a{
 
 .underline
 {
+    /* display: flex;
+    flex-direction: row; */
     width: 84%;
     height: 4px;
     margin-left: 130px;
@@ -286,6 +312,8 @@ nav ul li a{
     margin-left: 100px;
     background-color: rgb(41, 38, 38);
     float: left;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .s3box1:hover
@@ -329,8 +357,10 @@ nav ul li a{
 {
     width: 100%;
     height: 100vh;
-    border: 2px solid #000;
+    /* border: 2px solid #fff; */
     color: white;
+    display: flex; 
+    flex-direction: column;
 }
 
 #section4 h2
@@ -341,16 +371,27 @@ nav ul li a{
     font-size: 2em;
 }
 
+#section4 .s4bigbox
+{
+    width: 100%;
+    height: 575px;
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: row;
+}
+
 #section4 .s4box1{
     width: 450px;
     height: 450px;
     border: 2px solid #fff;
-    margin-top: 30px;
-    margin-left: 200px;
+    margin-top: 35px;
+    margin-left: 210px;
     padding-left: 20px;
     padding-top: 20px;
     background-color:  rgb(41, 38, 38);
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
 }
 
 .s4box1 .s4sbox
@@ -358,6 +399,8 @@ nav ul li a{
     width: 95%;
     height: 80%;
     border: 2px solid #fff;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .s4sbox img
@@ -383,12 +426,14 @@ nav ul li a{
     width: 450px;
     height: 450px;
     border: 2px solid #fff;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-left: 170px;
     padding-left: 20px;
     padding-top: 20px;
     background-color:  rgb(41, 38, 38);
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
 }
 
 .s4box2 .s4sbox2
@@ -422,14 +467,27 @@ nav ul li a{
     height: 100vh;
     /* border: 2px solid #fff; */
     color: white;
+    display: flex; 
+    flex-direction: column;
+}
+
+#section5 .s5bigbox
+{
+    width: 100%;
+    height: 550px;
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: row;
 }
 
 #section5 .Cbox1
 {
     width: 50%;
-    height: 80%;
+    height: 100%;
     /* border: 2px solid #fff; */
-    float: left;
+    /* float: left; */
+    display: flex; 
+    flex-direction: column;
 }
 
 .Cbox1 h1
@@ -450,9 +508,11 @@ nav ul li a{
 #section5 .Cbox2
 {
     width: 50%;
-    height: 80%;
+    height: 100%;
     /* border: 2px solid #fff; */
-    float: right;
+    /* float: right; */
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .Cbox2 h1
@@ -466,11 +526,15 @@ nav ul li a{
 .Cbox2 #img1
 {
     margin-left: 180px;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .Cbox2 #img2
 {
     margin-left: 20px;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 #section5 .Cbox3
@@ -481,6 +545,7 @@ nav ul li a{
     float: left;
     margin-top: 60px;
     padding-left: 620px;
+    display: flex;
 }
 
 .Cbox3 h4
