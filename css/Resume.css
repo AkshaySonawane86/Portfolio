@@ -28,23 +28,23 @@ body
 {
     width: 100%;
     height: 100vh;
-    /* border: 2px solid #fff; */
+    border: 2px solid #fff;
 }
 
 #section1 .main-logo-menu
 {
     width: 100%;
     height: 50px;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display: flex;
     flex-direction: row;
 }
 
 .main-logo-menu .logo
 {
-    width: 40%;
+    width: 45%;
     height: 100%;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display: flex;
 }
 
@@ -61,9 +61,48 @@ body
 { 
     width: 55%;
     height: 100%;
-    /* border: 2px solid #fff; */
+    border: 2px solid #fff;
     margin-left: 60px;
+    /*//// display: flex; */
+}
+
+/* #hamnav
+{
+    width: 100%;
+    background: #000;
+}
+
+#hamitems
+{
     display: flex;
+    position: fixed;
+
+}
+
+#hamitems a
+{
+    padding: 10px;
+    padding-left: 85px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;/
+}
+
+#hamitems a:hover
+{
+    color: yellow;
+}
+
+#hamnav label, #hamburger
+{
+    display: none;
+} */
+
+ .menu label, #hamburger
+{
+   
+   display: none;
 }
 
 .menu a:hover{
@@ -89,13 +128,13 @@ nav ul li a{
     font-size: 1.1em;
     font-weight: bold;
     padding-left: 45px;
-}
+} 
 
 #section1 .bigbox
 {
   width: 100%;
   height: 93vh;
-  /* border: 2px solid #fff; */
+  border: 2px solid #fff;
 }
 
 .bigbox img
@@ -280,16 +319,19 @@ nav ul li a{
     height: 100vh;
     /* border: 2px solid #fff; */
     color: white;
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
-#section3 p
+#section3 h1
 {
-    font-size: 2.2em;
-    padding-left: 690px;
-    padding-top: 170px;
-    font-weight: bold;
+    /* font-size: 2.2em; */
+    /* padding-left: 690px;
+    padding-top: 170px; */
+    /* justify-self: center; */
+    align-self: center;
+    /* font-weight: bold; */
 }
 
 .underline
@@ -302,16 +344,24 @@ nav ul li a{
     margin-top: 20px;
     background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%,rgb(238, 238, 36) 50%, #ffbd39 100%);
 }
-
+.bbbox
+{
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid #fff; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .s3box1
 {
     width: 25%;
     height: 200px;
     border: 2px solid #fff;
-    margin-top: 20px;
-    margin-left: 100px;
+    /* margin-top: 20px; */
+    /* margin-left: 100px; */
     background-color: rgb(41, 38, 38);
-    float: left;
+    /* float: left; */
     /* display: flex;
     flex-direction: column; */
 }
@@ -363,12 +413,13 @@ nav ul li a{
     flex-direction: column;
 }
 
-#section4 h2
+#section4 h1
 {
-    margin-left: 690px;
-    margin-top: 80px;
-    font-weight: bold;
-    font-size: 2em;
+    /* margin-left: 690px;
+    margin-top: 80px; */
+    align-self: center;
+    /* font-weight: bold; */
+    /* font-size: 2em; */
 }
 
 #section4 .s4bigbox
@@ -377,15 +428,17 @@ nav ul li a{
     height: 575px;
     /* border: 2px solid #fff; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #section4 .s4box1{
     width: 450px;
     height: 450px;
     border: 2px solid #fff;
-    margin-top: 35px;
-    margin-left: 210px;
+    /* margin-top: 35px;
+    margin-left: 210px; */
     padding-left: 20px;
     padding-top: 20px;
     background-color:  rgb(41, 38, 38);
@@ -426,8 +479,8 @@ nav ul li a{
     width: 450px;
     height: 450px;
     border: 2px solid #fff;
-    margin-top: 35px;
-    margin-left: 170px;
+    /* margin-top: 35px;
+    margin-left: 170px; */
     padding-left: 20px;
     padding-top: 20px;
     background-color:  rgb(41, 38, 38);
@@ -596,7 +649,7 @@ nav ul li a{
         width: 70%;
     }
 
-    #section3 .s3box1
+    #section3 .bbbox .s3box1
     {
         /* float: left; */
         width: 55%;
@@ -670,6 +723,67 @@ nav ul li a{
         margin-top: -70px;
     }
     
+}
+
+@media screen and (max-width: 768px){
+
+    .menu label
+    {
+        display: block;
+        color: #fff;
+    }
+
+    nav ul
+    {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: lightslategray;
+        left: -100%;
+        top: 100px;
+        transition: 0.5s ease;
+    }
+
+    nav ul li
+    {
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    
+
+    /* #hamitems a
+    {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border: 1px solid #333;
+        background-color: #333;
+    }
+
+    #hamnav label
+    {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+        float: right;
+    }
+
+    #hamitems
+    {
+        display: none;
+    }
+
+    #hamnav input:checked ~ #hamitems
+    {
+        display: block;
+    } */
+
 }
 
 @media only screen and (max-width: 360px){

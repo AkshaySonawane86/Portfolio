@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid #000;
+    display: flex;
+    /* justify-content: end; */
+}
+.container .box1
+{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    animation-name: aani;
+    animation-duration: 1.5s;
+    /* animation-iteration-count: unset; */
+}
+.image
+{
+    position: relative;
+    z-index: 1;
+}
+.image:hover
+{
+     /* transform: scale(1.8); */
+            /* transform: scalex(1.8); */
+            /* transform: rotate(30deg); */
+            /* transition: all 4s ease-in; */
+            /* transform: rotate(360deg); */
+            /* transform: rotateX(360deg); */
+            /* transform: skew(30deg); */
+            /* transform: skewy(30deg); */
+            /* transform: skewx(30deg); */
+            /* transition: all 1s ease-in; */
+            
+            /* transition: width,height 4s; */
+            /* 1. rotate 2. */
+}
+.box2
+{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+@keyframes aani
+{
+   0%
+   {
+    left: -10%;
+   }
+   25%
+   {
+    left: -20%;
+   }
+   50%
+   {
+    left: -30%;
+   }
+   75%
+   {
+    left: -40%;
+   }
+   100%
+   {
+    left: -50%;
+   }
+}
+
+.container .box1
+{
+    left: -50%;
+}
